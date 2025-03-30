@@ -39,10 +39,38 @@
       cursor: pointer;
     }
     .navbar-profile {
-      border-radius: 4px;
-
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      cursor: pointer;
       .profile {
         width: 35px;
+        border-radius: 4px;
+      }
+      .dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: max-content;
+        background: #191919;
+        padding: 18px 22px;
+        border-radius: 2px;
+        text-decoration: underline;
+        z-index: 1;
+        display: none;
+
+        p {
+          font-size: 13px;
+          cursor: pointer;
+        }
+      }
+      &:hover {
+        // this hover effect is owned by the navbar profile
+        // this is the simple use of css.
+        .dropdown {
+          display: block;
+        }
       }
     }
   }

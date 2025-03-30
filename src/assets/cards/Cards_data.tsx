@@ -13,7 +13,7 @@ import card_img12 from './card12.jpg';
 import card_img13 from './card13.jpg';
 import card_img14 from './card14.jpg';
 
-const cards_data = [
+const CardsData = [
     {
         image:card_img1,
         name:"Kung Fu Panda"
@@ -72,4 +72,4 @@ const cards_data = [
     },
 ]
 
-export default cards_data;
+export default CardsData;

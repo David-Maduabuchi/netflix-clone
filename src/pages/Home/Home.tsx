@@ -2,9 +2,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./Home.scss";
 import hero_banner from "../../assets/hero_banner.jpg";
 import hero_title from "../../assets/hero_title.png";
-import play_icon from "../../assets/play_icon.png"
+import play_icon from "../../assets/play_icon.png";
 import info_icon from "../../assets/info_icon.png";
 import TitleCards from "../../components/TitleCards/TitleCards";
+import Footer from "../../components/Footer/Footer";
 const Home = () => {
   return (
     <div className="home">
@@ -21,14 +22,23 @@ const Home = () => {
           <div className="hero-btns">
             <button className="btn">
               <img src={play_icon} alt="" />
-              Play</button>
+              Play
+            </button>
             <button className="btn dark-btn">
               <img src={info_icon} alt="" />
-              More Info</button>
+              More Info
+            </button>
           </div>
-          <TitleCards />
+          <TitleCards title="Upcoming Netflix Movies" />
         </div>
       </div>
+      <div className="more-cards">
+        <TitleCards title="Blockbuster Movies" />
+        <TitleCards title="Only on Netflix" />
+        <TitleCards title="Top Picks for You" />
+      </div>
+
+      <Footer />
     </div>
   );
 };
